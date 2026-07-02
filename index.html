@@ -4,74 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Blog Tech</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color:#bababa;
-            color: #FFFFFF;
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 16px;
-        }
-        main {
-            background-color: #FFFFFF;
-            color: #000000;
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            display: flex;
-            flex-direction: column;
-        }
-        article {
-            display: flex;
-            flex-direction: column; 
-            gap: 15px;
-            margin-bottom: 40px;
-            padding-bottom: 30px;
-            border-bottom: 1px solid #e0e0e0;
-        }
-        .meu-post-destaque {
-            border: 2px solid #000000; 
-            border-radius: 8px;        
-            padding: 16px;             
-            width: auto;               
-        }
-        .artigo-autor {
-            font-weight: bold;
-        }
-        .botao-coracao {
-            background: none;
-            border: 1px solid #0b78ed;
-            padding: 8px 12px;
-            font-size: 18px;
-            cursor: pointer;
-            border-radius: 4px;
-            width: fit-content;
-            transition: background 0.2s;
-            margin-right: 10px;
-            margin-top: 10px;
-        }
-        .botao-coracao:hover {
-            background-color: #f4f4f4;
-        }
-        .botao-coracao span {
-            margin-left: 6px;
-            font-size: 16px;
-            color: #0288f6;
-        }
-        img {
-            max-width: 50%;
-            height: auto;
-            display: block;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -111,28 +44,7 @@
                 <button class="botao-coracao">😁<span>0</span></button>
             </div>
         </article>
-    <script>
-        const botoes = document.querySelectorAll("button");
-
-        botoes.forEach(function (botao) {
-            let curtiu = false;
-
-            botao.addEventListener("click", botaoClicado);
-
-            function botaoClicado() {
-                console.log("fui clicado");
-                let texto = botao.querySelector("span");
-
-                if (curtiu === false) {
-                    texto.textContent++;
-                    curtiu = true;
-                } else {
-                    texto.textContent--;
-                    curtiu = false;
-                }
-            }
-        });
-    </script>
 
 </body>
+<script src="script.js"></script>
 </html>
