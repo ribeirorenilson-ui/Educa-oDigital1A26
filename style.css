@@ -5,7 +5,7 @@ body {
             background-color: #f4f4f4;
         }
         header {
-            background-color:#3cff00;
+            background-color:#00fff7;
             color: #FFFFFF;
             text-align: center;
             max-width: 800px;
@@ -28,7 +28,7 @@ body {
             gap: 15px;
             margin-bottom: 40px;
             padding-bottom: 30px;
-            border-bottom: 1px solid #8c00ff;
+            border-bottom: 1px solid #00b7fa;
         }
         .meu-post-destaque {
             border: 2px solid #000000; 
